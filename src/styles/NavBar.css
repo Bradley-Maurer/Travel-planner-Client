@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+.navbar {
+  background-color: lightgray; 
+}
+
+/* Specific Navbar Colors Based on Pages */
+.navbar-home {
+  background-color: #A2BFFE; /* Blue for Home page */
+}
+
+.navbar-plan {
+  background-color: #FAE588; /* Yellow for Plan page */
+}
+
+.navbar-budget {
+  background-color: #DB5856; /* red for Budget page */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  order: 1; 
+}
+
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  flex-direction: column;
+  cursor: pointer;
+  order: 2; /* Ensure hamburger is the last item */
+  margin-left: auto;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Transform the hamburger to a 'cross' when clicked */
+.hamburger.open .bar:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translateY(8px);
+  transform: rotate(-45deg) translateY(8px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  -webkit-transform: rotate(45deg) translateY(-8px);
+  transform: rotate(45deg) translateY(-8px);
+}
+
+.navbar-logo {
+  height: 30px; 
+  width: auto;
+}
+
+
+/* Navbar links */
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  order: 3; 
+}
+
+.navbar-links li {
+  margin-left: 2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Mobile view: Show the hamburger menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show hamburger on smaller screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide navbar links by default on small screens */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links.open {
+    display: flex; /* Show navbar links when the hamburger is clicked */
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    left: 0;
+    background-color: #5ab75a; 
+    padding: 1rem;
+  }
+
+  .navbar-links li {
+    margin: 1rem 0;
+  }
+}
