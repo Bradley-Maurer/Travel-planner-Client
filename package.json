@@ -42,5 +42,5 @@
     "jest": "^27.5.1",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-react": "^7.24.7"
-  }
+  },
 }
