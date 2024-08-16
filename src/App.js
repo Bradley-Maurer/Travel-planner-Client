@@ -23,11 +23,6 @@ function App() {
     sessionStorage.setItem('isAuthenticated', 'true');
   };
 
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-    sessionStorage.removeItem('isAuthenticated');
-  };
-
   return (
     <Router>
       <div className="App">
