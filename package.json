@@ -11,10 +11,9 @@
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^5.0.0"
-
 }
+    "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^5.0.0"
   },
   "scripts": {
     "start": "FAST_REFRESH=false react-scripts start",
