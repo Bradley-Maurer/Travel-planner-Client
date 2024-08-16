@@ -1,5 +1,5 @@
 import React from 'react';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 function HomePage() {
@@ -21,7 +21,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <link to="/plan">No trips planned? Get started here!</link>
+        <Link to="/Plan">No trips planned? Get started here!</Link>
       </div>
     </div>
   );
