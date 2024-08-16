@@ -12,11 +12,10 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
 }
-    "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^5.0.0"
+
   },
   "scripts": {
-    "start": "FAST_REFRESH=false react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -38,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7"
   }
 }
